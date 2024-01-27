@@ -1,0 +1,115 @@
+C:\Users\Lenovo\Documents\Askari bank\email\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Lenovo\Documents\Askari bank\email\bin\Debug\net7.0\appsettings.json
+C:\Users\Lenovo\Documents\Askari bank\email\bin\Debug\net7.0\email.staticwebassets.runtime.json
+C:\Users\Lenovo\Documents\Askari bank\email\bin\Debug\net7.0\email.exe
+C:\Users\Lenovo\Documents\Askari bank\email\bin\Debug\net7.0\email.deps.json
+C:\Users\Lenovo\Documents\Askari bank\email\bin\Debug\net7.0\email.runtimeconfig.json
+C:\Users\Lenovo\Documents\Askari bank\email\bin\Debug\net7.0\email.dll
+C:\Users\Lenovo\Documents\Askari bank\email\bin\Debug\net7.0\email.pdb
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.RazorAssemblyInfo.cache
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.RazorAssemblyInfo.cs
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\staticwebassets\msbuild.email.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\staticwebassets\msbuild.build.email.props
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.email.props
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.email.props
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\scopedcss\bundle\email.styles.css
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\scopedcss\projectbundle\email.bundle.scp.css
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.dll
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\refint\email.dll
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.pdb
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\email.genruntimeconfig.cache
+C:\Users\Lenovo\Documents\Askari bank\email\obj\Debug\net7.0\ref\email.dll
+D:\email-auto\email\bin\Debug\net7.0\appsettings.Development.json
+D:\email-auto\email\bin\Debug\net7.0\appsettings.json
+D:\email-auto\email\bin\Debug\net7.0\email.staticwebassets.runtime.json
+D:\email-auto\email\bin\Debug\net7.0\email.exe
+D:\email-auto\email\bin\Debug\net7.0\email.deps.json
+D:\email-auto\email\bin\Debug\net7.0\email.runtimeconfig.json
+D:\email-auto\email\bin\Debug\net7.0\email.dll
+D:\email-auto\email\bin\Debug\net7.0\email.pdb
+D:\email-auto\email\obj\Debug\net7.0\email.csproj.AssemblyReference.cache
+D:\email-auto\email\obj\Debug\net7.0\email.GeneratedMSBuildEditorConfig.editorconfig
+D:\email-auto\email\obj\Debug\net7.0\email.AssemblyInfoInputs.cache
+D:\email-auto\email\obj\Debug\net7.0\email.AssemblyInfo.cs
+D:\email-auto\email\obj\Debug\net7.0\email.csproj.CoreCompileInputs.cache
+D:\email-auto\email\obj\Debug\net7.0\email.MvcApplicationPartsAssemblyInfo.cache
+D:\email-auto\email\obj\Debug\net7.0\email.RazorAssemblyInfo.cache
+D:\email-auto\email\obj\Debug\net7.0\email.RazorAssemblyInfo.cs
+D:\email-auto\email\obj\Debug\net7.0\staticwebassets\msbuild.email.Microsoft.AspNetCore.StaticWebAssets.props
+D:\email-auto\email\obj\Debug\net7.0\staticwebassets\msbuild.build.email.props
+D:\email-auto\email\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.email.props
+D:\email-auto\email\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.email.props
+D:\email-auto\email\obj\Debug\net7.0\staticwebassets.pack.json
+D:\email-auto\email\obj\Debug\net7.0\staticwebassets.build.json
+D:\email-auto\email\obj\Debug\net7.0\staticwebassets.development.json
+D:\email-auto\email\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\email-auto\email\obj\Debug\net7.0\scopedcss\bundle\email.styles.css
+D:\email-auto\email\obj\Debug\net7.0\scopedcss\projectbundle\email.bundle.scp.css
+D:\email-auto\email\obj\Debug\net7.0\email.dll
+D:\email-auto\email\obj\Debug\net7.0\refint\email.dll
+D:\email-auto\email\obj\Debug\net7.0\email.pdb
+D:\email-auto\email\obj\Debug\net7.0\email.genruntimeconfig.cache
+D:\email-auto\email\obj\Debug\net7.0\ref\email.dll
+D:\email-auto\email\bin\Debug\net7.0\Humanizer.dll
+D:\email-auto\email\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\email-auto\email\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\email-auto\email\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\email-auto\email\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\email-auto\email\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\email-auto\email\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\email-auto\email\bin\Debug\net7.0\Npgsql.dll
+D:\email-auto\email\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\email-auto\email\bin\Debug\net7.0\System.CodeDom.dll
+D:\email-auto\email\obj\Debug\net7.0\email.csproj.CopyComplete
+E:\CE\email\bin\Debug\net7.0\appsettings.Development.json
+E:\CE\email\bin\Debug\net7.0\appsettings.json
+E:\CE\email\bin\Debug\net7.0\email.staticwebassets.runtime.json
+E:\CE\email\bin\Debug\net7.0\email.exe
+E:\CE\email\bin\Debug\net7.0\email.deps.json
+E:\CE\email\bin\Debug\net7.0\email.runtimeconfig.json
+E:\CE\email\bin\Debug\net7.0\email.dll
+E:\CE\email\bin\Debug\net7.0\email.pdb
+E:\CE\email\bin\Debug\net7.0\Humanizer.dll
+E:\CE\email\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\CE\email\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\CE\email\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\CE\email\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\CE\email\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\CE\email\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\CE\email\bin\Debug\net7.0\Npgsql.dll
+E:\CE\email\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\CE\email\bin\Debug\net7.0\System.CodeDom.dll
+E:\CE\email\obj\Debug\net7.0\email.csproj.AssemblyReference.cache
+E:\CE\email\obj\Debug\net7.0\email.GeneratedMSBuildEditorConfig.editorconfig
+E:\CE\email\obj\Debug\net7.0\email.AssemblyInfoInputs.cache
+E:\CE\email\obj\Debug\net7.0\email.AssemblyInfo.cs
+E:\CE\email\obj\Debug\net7.0\email.csproj.CoreCompileInputs.cache
+E:\CE\email\obj\Debug\net7.0\email.MvcApplicationPartsAssemblyInfo.cache
+E:\CE\email\obj\Debug\net7.0\email.RazorAssemblyInfo.cache
+E:\CE\email\obj\Debug\net7.0\email.RazorAssemblyInfo.cs
+E:\CE\email\obj\Debug\net7.0\staticwebassets\msbuild.email.Microsoft.AspNetCore.StaticWebAssets.props
+E:\CE\email\obj\Debug\net7.0\staticwebassets\msbuild.build.email.props
+E:\CE\email\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.email.props
+E:\CE\email\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.email.props
+E:\CE\email\obj\Debug\net7.0\staticwebassets.pack.json
+E:\CE\email\obj\Debug\net7.0\staticwebassets.build.json
+E:\CE\email\obj\Debug\net7.0\staticwebassets.development.json
+E:\CE\email\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\CE\email\obj\Debug\net7.0\scopedcss\bundle\email.styles.css
+E:\CE\email\obj\Debug\net7.0\scopedcss\projectbundle\email.bundle.scp.css
+E:\CE\email\obj\Debug\net7.0\email.csproj.CopyComplete
+E:\CE\email\obj\Debug\net7.0\email.dll
+E:\CE\email\obj\Debug\net7.0\refint\email.dll
+E:\CE\email\obj\Debug\net7.0\email.pdb
+E:\CE\email\obj\Debug\net7.0\email.genruntimeconfig.cache
+E:\CE\email\obj\Debug\net7.0\ref\email.dll

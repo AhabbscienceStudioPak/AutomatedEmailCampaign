@@ -1,0 +1,89 @@
+@model List<Campaign>
+@{
+    ViewData["Title"] = "Activate/Deactivate Emails";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+<!-- Sidebar -->
+<partial name="SubMenu" />
+
+<div class="content">
+    <div class="container mt-3 mb-3">
+        <h1>Activate/Deactivate Email Campaigns</h1>
+        <form method="post" action="SendEmail">
+            <div class="container mt-5">
+                <input type="hidden" name="pageNumber" value="@ViewBag.PageNumber"/>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <input type="checkbox" id="selectAll" onclick="toggleAllCheckboxes()">
+                            </th>
+                            <th scope="col">Campaign Name</th>
+                            @* <th scope="col">Frequency</th> *@
+                            <th scope="col">Scheduled Date and Time</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var campaign in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="selectedCampaignIds" value="@campaign.CampaignId">
+                                </td>
+                                <td>@campaign.CampaignName</td>
+                                <td>@campaign.ScheduledDate</td>
+                                @* <td>@emailViewModel.Email.Frequency</td> *@
+                                <td>
+                                    @if (campaign.IsActive == false){
+                                        <span class="badge bg-warning">Inactive</span>
+                                    }else{
+                                        <span class="badge bg-success">Active</span>
+                                    }
+                                </td>    
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                @if (ViewBag.PageNumber > 1)
+                {
+                    <a href="?page=@(ViewBag.PageNumber - 1)" class="btn btn-secondary"><span>&#8592;</span></a>
+                }
+                <p>Page: @(ViewBag.PageNumber + "/" + ViewBag.TotalPages)</p>
+                @if (Model.Count > 0 && ViewBag.PageNumber < ViewBag.TotalPages)
+                {
+                    <a href="?page=@(ViewBag.PageNumber + 1)" class="btn btn-secondary"><span>&#8594;</span></a>
+                }
+            </div>
+
+            <button type="submit" formaction="ActivateCampaigns" class="btn btn-success">Activate</button>
+            <button type="submit" formaction="DeactivateCampaigns" class="btn btn-danger">Deactivate</button>
+
+        </form>
+    </div>
+</div>
+
+<script>
+    function toggleAllCheckboxes() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var selectAllCheckbox = document.getElementById("selectAll");
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = selectAllCheckbox.checked;
+        });
+    }
+</script>
+
+</body>
+</html>

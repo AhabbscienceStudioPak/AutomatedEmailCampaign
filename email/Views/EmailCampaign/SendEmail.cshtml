@@ -1,0 +1,91 @@
+@model List<EmailViewModel>
+@{
+    ViewData["Title"] = "Generate Emails";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+ <!-- mt-5 mb-3 col-lg-10 -->
+<!-- Sidebar -->
+<partial name="SubMenu" />
+
+<div class="content">
+    <div class="container mt-3 mb-3">
+        <h1>Generate Emails</h1>
+        <form asp-action="SendEmail" method="post" class="needs-validation" novalidate>
+            <div class="container mt-5">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <input type="checkbox" id="selectAll" onclick="toggleAllCheckboxes()">
+                            </th>
+                            <th scope="col">Recipient Name</th>
+                            <th scope="col">Frequency</th>
+                            <th scope="col">Email Subject</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var emailViewModel in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="selectedEmailIds" value="@emailViewModel.Email.EmailId">
+                                </td>
+                                <td>@emailViewModel.RecipientName</td>
+                                <td>@emailViewModel.Email.Frequency</td>
+                                <td>@emailViewModel.Email.Subject</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>    
+
+            <div class="form-group mt-3 mb-3 col-lg-4">
+                <label for="sendDate">Send Date</label>
+                <input type="datetime-local" class="form-control" id="sendDate" name="sendDate">
+            </div>
+
+            <button type="submit" formaction="DeleteSelectedEmails" class="btn btn-danger">Delete Emails</button>
+            <button type="submit" class="btn btn-primary">Send Emails</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    function toggleAllCheckboxes() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var selectAllCheckbox = document.getElementById("selectAll");
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = selectAllCheckbox.checked;
+        });
+    }
+
+    @* // Get the input element
+    var sendDateTimeInput = document.getElementById('sendDate'); // Use 'sendDate' here
+
+    // Add an event listener to convert local time to UTC when the input changes
+    sendDateTimeInput.addEventListener('change', function() {
+        // Get the selected local date and time
+        var localDateTime = new Date(this.value);
+
+        // Convert local time to UTC
+        var utcDateTime = new Date(localDateTime.getTime() + localDateTime.getTimezoneOffset() * 60000);
+
+        // Format the UTC date and time to match the input format (yyyy-MM-ddTHH:mm)
+        var formattedUtcDateTime = utcDateTime.toISOString().slice(0, 16);
+
+        // Set the input value to the formatted UTC date and time
+        this.value = formattedUtcDateTime;
+    }); *@
+</script>
+
+</body>
+</html>

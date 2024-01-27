@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<!-- Section: Design Block -->
+<section class="hero-bg overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-lg-start my-5 d-flex justify-content-start">
+        <div class="row gx-lg-5 align-items-center mb-5">
+            <div class="col-lg-8 mb-5 mb-lg-0" style="z-index: 10">
+                <h1 class="my-5 display-5 fw-bold ls-tight text-white">I, Emailing System
+                </h1>
+                <p class="mb-5 opacity-70 ls-tight text-white">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Temporibus, expedita iusto veniam atque, magni tempora mollitia
+                    dolorum consequatur nulla, neque debitis eos reprehenderit quasi
+                    ab ipsum nisi dolorem modi. Quos? 
+                </p>
+                <span class = "space"></span>
+            </div>
+
+            <div class="col-lg-4 mb-5 mb-lg-0 position-relative justify-content-end">
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <form asp-action="ComposeEmail" asp-controller="EmailCampaign">
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form3Example3" class="form-control"/>
+                                <label class="form-label" for="form3Example3">Email address</label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="form3Example4" class="form-control" />
+                                <label class="form-label" for="form3Example4">Password</label>
+                            </div>
+
+                            <!-- Forgot Password link -->
+                            <div class="text-left">
+                                <a asp-action="ForgotPassword" asp-controller="Account" class="link-primary">Forgot Password?</a>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="login-btn">
+                                Login
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

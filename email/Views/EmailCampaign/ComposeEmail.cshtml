@@ -1,0 +1,111 @@
+@model Email
+
+@{
+    ViewData["Title"] = "Configure Emails";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+<!-- Sidebar -->
+<partial name="SubMenu" />
+
+<div class="content">
+    <div class="container mt-3 mb-3">
+        <h1>Configure Emails</h1>
+        <form asp-action="ComposeEmail" method="post" class="needs-validation" novalidate>
+            <!-- Company dropdown -->
+            <div class="form-group mb-3 col-lg-6">
+                <label for="company">Company</label>
+                <select class="form-control" id="recipient" name="RecipientName" required>
+                    <option value="">Select Recipient</option>
+                    @foreach (var recipient in ViewBag.Recipients)
+                    {
+                        <option value="@recipient">@recipient</option>
+                    }
+                </select>
+            </div>
+
+            <input type="text" class="form-control" id="RecipientId" name="RecipientId" value="@Model?.RecipientId" hidden required>
+
+            <!-- Email frequency dropdown -->
+            <div class="form-group mb-3 col-lg-6">
+                <label for="frequency">Email Frequency</label>
+                <select class="form-control" id="frequency" name="frequency" value="@Model?.Frequency" required>
+                    <option value="">Select Email Frequency</option>
+                    <option value="One-time">One-time</option>
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <!-- Send to field -->
+            <div class="form-group mb-3 col-lg-6">
+                <label for="sendTo">Send To</label>
+                <input type="text" class="form-control" id="sendTo" placeholder="Enter email address" readonly>
+            </div>
+
+            <!-- CC field -->
+            <div class="form-group mb-3 col-lg-6">
+                <label for="cc">CC</label>
+                <input type="text" class="form-control" id="cc" placeholder="Enter email address" name="cc" value="@Model?.CC" >
+            </div>
+
+            <!-- Subject field -->
+            <div class="form-group mb-3">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="Subject" value="@Model?.Subject" required>
+            </div>
+
+            <!-- Body field -->
+            <div class="form-group mb-3">
+                <label for="body">Body</label>
+                <textarea class="form-control" id="body" rows="5" placeholder="Enter email body" name="Content" value="@Model?.Content" required></textarea>
+            </div>
+
+            <!-- Save and close button -->
+            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="submit" class="btn btn-danger">Close</button>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        document.getElementById("recipient").addEventListener("change", function () {
+            var selectedRecipient = this.value;
+            var sendToField = document.getElementById("sendTo");
+            var recipientIdField = document.getElementById("RecipientId");
+
+            if (selectedRecipient) {
+                $.ajax({
+                    url: '@Url.Action("GetRecipientData", "EmailCampaign")',
+                    type: 'GET',
+                    data: { recipient: selectedRecipient },
+                    success: function (data) {
+                        sendToField.value = data.email;
+                        recipientIdField.value = data.recipientId;
+                    },
+                    error: function () {
+                        sendToField.value = "";
+                        recipientIdField.value = "";
+                    }
+                });
+            } else {
+                sendToField.value = "";
+                recipientIdField.value = "";
+            }
+        });
+    </script>
+}
+
+
+</body>
+</html>

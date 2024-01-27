@@ -1,0 +1,138 @@
+/* Global Styles */
+html {
+  font-size: 16px; /* Increased the base font size for better readability */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa; /* Soft background color */
+}
+
+/* Hero Section */
+.hero-bg {
+  background-image: url('../img/cover.jpg');
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(315deg, #dfdcdb 0%, #1d1d1e 74%);
+  opacity: 0.3;
+}
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+
+/* Base styles for the button */
+.login-btn {
+  position: relative;
+  margin: 15px 0 5px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007bff; /* Replace $accentcolor with the desired color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  width: 85%;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Styles for button hover effect */
+.login-btn:hover {
+background-color: #0056b3; /* Change to your desired hover color */
+}
+
+/* Styles for button active effect (when clicked) */
+.login-btn:active {
+background-color: #004380; /* Change to your desired active color */
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(248, 249, 250, 0.9); /* Reduced opacity for a glassmorphism effect */
+  padding-top: 20px;
+  z-index: 1; /* Ensure the sidebar stays above the content */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added subtle box-shadow */
+}
+
+.sidebar .nav-item {
+  padding: 8px 20px;
+}
+
+.sidebar p {
+  text-align: left;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 18px; /* Increased font size for better readability */
+}
+
+.sidebar .nav-link {
+  color: #333;
+  font-size: 16px; /* Increased font size for better readability */
+  transition: color 0.3s ease; /* Smooth link color transition */
+}
+
+.sidebar .nav-link:hover {
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.sidebar .fas {
+ margin-right: 10px; 
+}
+
+.sidebar-brand img {
+  height: 70px;
+  display: block; /* Removed flexbox styles as they were not required */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Content Section */
+.content {
+  margin-left: 250px;
+  margin-bottom: 60px;
+  padding: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  /* Adjust styles for smaller screens */
+  .sidebar {
+    width: 100%;
+    position: static;
+  }
+  .content {
+    margin-left: 0;
+  }
+}
+
+.pagination {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.pagination p {
+  margin: 10px;
+}
+
+
+

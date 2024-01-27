@@ -1,0 +1,65 @@
+@model Recipient;
+
+@{
+    ViewData["Title"] = "Recipient Form";
+    var emailErrors = ViewData.ModelState["Email"]?.Errors;
+    var nameErrors = ViewData.ModelState["Name"]?.Errors;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+<!-- Sidebar -->
+<partial name="SubMenu" />
+
+<div class="content">
+    <div class="container mt-3 mb-3">
+        <h1>@ViewData["Title"]</h1>
+        <form asp-action="AddRecipient" method="post" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="RecipientName" class="form-label">Recipient Name</label>
+                <input type="text" class="form-control" id="RecipientName" name="RecipientName" value="@Model.RecipientName" required>
+                <div class="invalid-feedback">
+                    Please provide a recipient name.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="RecipientCompany" class="form-label">Recipient Company</label>
+                <input type="text" class="form-control" id="RecipientCompany" name="RecipientCompany" value="@Model.RecipientCompany">
+            </div>
+            <div class="mb-3">
+                <label for="ContactEmail" class="form-label">Contact Email</label>
+                <input type="email" class="form-control" id="ContactEmail" name="ContactEmail" value="@Model.ContactEmail" required>
+                <div class="invalid-feedback">
+                    Please provide a valid contact email.
+                </div>
+            </div>
+            @if (emailErrors != null && emailErrors.Count > 0)
+            {
+                <div class="text-danger">
+                    @foreach (var error in emailErrors)
+                    {
+                        @error.ErrorMessage <br />
+                    }
+                </div>
+            }
+            @if (nameErrors != null && nameErrors.Count > 0)
+            {
+                <div class="text-danger">
+                    @foreach (var error in nameErrors)
+                    {
+                        @error.ErrorMessage <br />
+                    }
+                </div>
+            }
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

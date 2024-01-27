@@ -1,0 +1,34 @@
+<!-- Sidebar -->
+<head>    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/b8cecb7411.js" crossorigin="anonymous"></script></head>
+<div class="sidebar col-lg-2">
+    <ul class="nav flex-column">
+        <a class="sidebar-brand" href="#">
+            <img src="~/img/email-icon-23.png" alt="logo">
+        </a>
+        <p>Email Automation System</p>
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("AddRecipient", "EmailCampaign")">
+                <i class="fas fa-users"></i>Add Recipients
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("ComposeEmail", "EmailCampaign")">
+                <i class="fas fa-cog"></i>Compose Email
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("SendEmail", "EmailCampaign")">
+                <i class="fas fa-file-alt"></i>Send Emails
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("ActivateEmail", "EmailCampaign")">
+                <i class="fas fa-toggle-on"></i>Activate/Deactivate Emails
+            </a>
+        </li>
+        <!-- Add more navigation items as needed -->
+    </ul>
+</div>
+
+<!-- End Sidebar -->
