@@ -177,12 +177,12 @@ namespace email.Controllers
                 smtpClient.Host = "smtp.mailgun.org";
                 smtpClient.Port = 587;
                 smtpClient.EnableSsl = true;
-                smtpClient.Credentials = new NetworkCredential("postmaster@sandbox87f9cc9adb244fecaf3c118dbb2d56de.mailgun.org", "558757328ec926ccd0407f600e601a26-ee16bf1a-5ddf768b");
+                smtpClient.Credentials = new NetworkCredential("mailgun domain", "api-key");
 
                 // Create and send the email
                 using (var mailMessage = new MailMessage())
                 {
-                    mailMessage.From = new MailAddress("postmaster@sandbox87f9cc9adb244fecaf3c118dbb2d56de.mailgun.org	");
+                    mailMessage.From = new MailAddress("mailgun domain");
                     mailMessage.To.Add(RecipientEmailAddress);
                     mailMessage.Subject = email.Subject;
                     mailMessage.Body = email.Content;
