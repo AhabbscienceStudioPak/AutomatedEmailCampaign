@@ -6,6 +6,8 @@
 During my internship at Askari Bank, I contributed to the front end of an email management application. As a subsequent side project, I extended it into a fully automated email campaign management system.
 The Automated Email Campaign Management System is a comprehensive solution designed for automating the entire lifecycle of email campaigns. This system streamlines the creation, management, and execution of campaigns, providing users with a seamless and efficient experience.
 
+PLEASE NOTE: This project is purely for research and educational purposes. In its current stage, it must NOT be used for any practical purposes or applications.
+
 ## Technologies
 * Developed with ASP.NET MVC Core for a robust and scalable backend.
 * Utilizes PostgreSQL as the database management system for efficient data storage.
