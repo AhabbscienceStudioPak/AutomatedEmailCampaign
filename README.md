@@ -19,7 +19,7 @@ PLEASE NOTE: This project is purely for research and educational purposes. In it
 * .NET Core 7.0
 * PostgreSQL
 * Entity Framework Core
-* Mailgun API
+* Mailgun Credentials
 * Bootstrap 5
 
 ## How to Set and Use
